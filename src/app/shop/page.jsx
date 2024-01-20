@@ -1,50 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-// import Link from "next/link";
 import { usePathname } from "next/navigation";
-import wp01 from "../../assets/women/wp01.png";
-import wp02 from "../../assets/women/wp02.png";
-import wp03 from "../../assets/women/wp03.png";
-import wp04 from "../../assets/women/wp04.png";
-import wp05 from "../../assets/women/wp05.png";
+import data from "../../data/products.json";
 export default function page() {
   const pathname = usePathname();
   console.log(pathname);
-  const products = [
-    {
-      img: wp01,
-      title: "NF-Green Lahanga Choli Stitched Shit",
-      price: "19000",
-    },
-    {
-      img: wp02,
-      title: "NF-Green Lahanga Choli Stitched Shit",
-      price: "8000",
-    },
-    {
-      img: wp03,
-      title: "NF-Green Lahanga Choli Stitched Shit",
-      price: "5000",
-    },
-    {
-      img: wp04,
-      title: "NF-Green Lahanga Choli Stitched Shit",
-      price: "20000",
-    },
-    {
-      img: wp05,
-      title: "NF-Green Lahanga Choli Stitched Shit",
-      price: "19000",
-    },
-  ];
+  console.log(data.products);
   return (
     <>
       <div className="shop__main__header__line"></div>
       <div className="shop__main__header">
         <div className="shop__main__header__left">
-          <div className="shop__main__header__left__content__entry">Men</div>
-          <div className="shop__main__header__left__content__entry">Women</div>
+          <button className="shop__main__header__left__content__entry">
+            Men
+          </button>
+          <button className="shop__main__header__left__content__entry">
+            Women
+          </button>
         </div>
         <div className="shop__main__header__right">
           <div className="shop__main__header__left__search">
@@ -57,8 +30,8 @@ export default function page() {
         </div>
       </div>
       <div className="shop__products__container">
-        {products.map((product, index) => (
-          <div key={index} className="shop__products__card__wraper">
+        {data.products.slice(0, 20).map((product, index) => (
+          <div key={product.id} className="shop__products__card__wraper">
             <div className="shop__products__fav__btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +54,7 @@ export default function page() {
             >
               <Image
                 className="shop__products__card__base__img"
-                src={product.img}
+                src={product.images[0].src}
                 alt="product"
                 width={200}
                 height={300}
@@ -93,7 +66,7 @@ export default function page() {
                 {product.title}
               </div>
               <div className="shop__products__card__content__price">
-                Rs.{product.price}
+                Rs.{product.variants[0].price}
               </div>
             </div>
           </div>
