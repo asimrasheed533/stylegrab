@@ -498,8 +498,8 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  // gap: .5em;
 }
+
 .shop__products__card__wraper {
   width: 24%;
   min-width: 200px;
@@ -508,6 +508,29 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 2em;
+  // background-color: rgba(248, 242, 242, 0.541);
+  position: relative;
+}
+.shop__products__card__wraper:hover .shop__products__fav__btn {
+  right: 1rem;
+  opacity: 1;
+  transition: 300ms ease;
+}
+.shop__products__fav__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  opacity: 0;
+  transition: 300ms ease;
+  cursor: pointer;
 }
 .shop__products__card__img {
   position: relative;
@@ -521,7 +544,7 @@ body {
   transition: 300ms ease-in-out;
 }
 .shop__products__card__base__img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: 300ms ease-in-out;
 }
 .shop__products__card__content {
@@ -1009,6 +1032,16 @@ body {
 .footer__explore__container__col__entry svg:hover {
   color: $heading;
   transition: 300ms ease-in-out;
+}
+.error__form {
+  font-size: 14px;
+  color: red;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 3.5em;
 }
 
 @media (max-width: 1200px) {
