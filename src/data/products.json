@@ -10,8 +10,8 @@
       "updated_at": "2024-01-20T17:17:14+05:00",
       "vendor": "Winter",
       "price": "350.00",
+      "category": "dress",
       "product_type": "Unstitched Printed",
-
       "images": [
         {
           "id": 31903000428632,
@@ -79,6 +79,7 @@
     },
     {
       "id": 7312570155096,
+      "category": "dress",
       "title": "Khaddar Shirt-Printed ",
       "handle": "e1501sh-ssh-ylw",
       "body_html": "<ul>\n<li><span data-sheets-value='{\"1\":2,\"2\":\"Unstitched Printed Khaddar Shirt\\nSplashes of color with funky vibe on shirt fabric\\nFabric (Shirt): Khaddar\\nColor: Yellow\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-mce-fragment=\"1\">Unstitched Printed Khaddar Shirt</span></li>\n<li><span data-sheets-value='{\"1\":2,\"2\":\"Unstitched Printed Khaddar Shirt\\nSplashes of color with funky vibe on shirt fabric\\nFabric (Shirt): Khaddar\\nColor: Yellow\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-mce-fragment=\"1\">Splashes of color with funky vibe on shirt fabric</span></li>\n<li><span data-sheets-value='{\"1\":2,\"2\":\"Unstitched Printed Khaddar Shirt\\nSplashes of color with funky vibe on shirt fabric\\nFabric (Shirt): Khaddar\\nColor: Yellow\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-mce-fragment=\"1\">Fabric (Shirt): Khaddar</span></li>\n<li><span data-sheets-value='{\"1\":2,\"2\":\"Unstitched Printed Khaddar Shirt\\nSplashes of color with funky vibe on shirt fabric\\nFabric (Shirt): Khaddar\\nColor: Yellow\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-mce-fragment=\"1\">Color: Yellow</span></li>\n</ul>\n<style type=\"text/css\" data-mce-fragment=\"1\"><!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--></style>",
@@ -188,6 +189,7 @@
     },
     {
       "id": 7423264948312,
+      "category": "dress",
       "price": "2250.00",
       "title": "3 Piece Khaddar Suit-Printed",
       "handle": "u2599su-3pc-grn",
@@ -293,6 +295,7 @@
     },
     {
       "id": 7344141795416,
+      "category": "dress",
       "price": "7350.00",
       "title": "3 Piece Khaddar Suit-Printed ",
       "handle": "u2606su-3pc-plm",
@@ -399,6 +402,7 @@
     },
     {
       "id": 7311038808152,
+      "category": "dress",
       "price": "9050.00",
       "title": "3 Piece Khaddar Suit-Embroidered ",
       "handle": "u1912su-3pc-pgn",
@@ -526,6 +530,7 @@
     },
     {
       "id": 7475547701336,
+      "category": "dress",
       "price": "7050.00",
       "title": "3 Piece Khaddar Suit-Embroidered",
       "handle": "u3070su-3pc-pnk",
@@ -648,6 +653,7 @@
     },
     {
       "id": 7444061880408,
+      "category": "dress",
       "price": "2050.00",
       "title": "3 Piece Khaddar Suit-Embroidered",
       "handle": "u2838su-3pc-blu",
@@ -1126,6 +1132,7 @@
     },
     {
       "id": 7529432219736,
+      "category": "accessories",
       "price": "2050.00",
       "title": "Classic Wallet",
       "handle": "lw58401-fre-brn",
@@ -1135,38 +1142,7 @@
       "updated_at": "2024-01-20T17:17:14+05:00",
       "vendor": "All Seasons",
       "product_type": "BAGS/WALLETS",
-      "tags": [
-        "accessories",
-        "BAGS",
-        "Citem | LW58401-FRE-BLK",
-        "Citem | LW58401-FRE-LGY",
-        "Citem | LW58401-FRE-RST",
-        "Classic Wallets",
-        "Wallets",
-        "women",
-        "Women Accessories"
-      ],
-      "variants": [
-        {
-          "id": 40922448167000,
-          "title": "Default Title",
-          "option1": "Default Title",
-          "option2": null,
-          "option3": null,
-          "sku": "LW58401-FRE-BRN",
-          "requires_shipping": true,
-          "taxable": false,
-          "featured_image": null,
-          "available": true,
-          "price": "1299.00",
-          "grams": 194,
-          "compare_at_price": "1299.00",
-          "position": 2,
-          "product_id": 7529432219736,
-          "created_at": "2024-01-05T12:10:08+05:00",
-          "updated_at": "2024-01-20T17:17:14+05:00"
-        }
-      ],
+
       "images": [
         {
           "id": 32045911507032,
@@ -11021,6 +10997,7 @@
     },
     {
       "id": 7519472910424,
+      "category": "accessories",
       "title": "Classic Wallet",
       "handle": "lw58601-fre-mrn",
       "body_html": "<ul>\n<li><strong>Product Details</strong></li>\n<li><strong>Wallet</strong></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\">Classic wallet with push button closure</span></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\">Magnetic fastener lock</span></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\">Three compartments (one zipped)</span></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\">One compartment with four cards slots</span></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\">Material: Rexine</span></li>\n<li><strong>Other Details</strong></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\"><b>Weight:</b> 198 g</span></li>\n<li><span data-sheets-root=\"1\" data-sheets-value='{\"1\":2,\"2\":\"Product Details\\nWallet\\nClassic wallet with push button closure\\nMagnetic fastener lock\\nThree compartments (one zipped)\\nOne compartment with four cards slots\\nMaterial: Rexine\\nOther Details\\nWeight: 198 g\\nDimensions: 8\\\" W x 4\\\" H x 1\\\" D\"}' data-sheets-userformat='{\"2\":513,\"3\":{\"1\":0},\"12\":0}' data-sheets-textstyleruns='{\"1\":0,\"2\":{\"5\":1}}{\"1\":23}{\"1\":156,\"2\":{\"5\":1}}{\"1\":164}{\"1\":173,\"2\":{\"5\":1}}{\"1\":193}{\"1\":201,\"2\":{\"5\":1}}{\"1\":211}' data-mce-fragment=\"1\">Dimensions: 8\" W x 4\" H x 1\" D</span></li>\n</ul>\n<style type=\"text/css\" data-mce-fragment=\"1\"><!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--></style>",
@@ -19194,6 +19171,7 @@
       "variants": [
         {
           "id": 40144585752664,
+
           "title": "Default Title",
           "option1": "Default Title",
           "option2": null,

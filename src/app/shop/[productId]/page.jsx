@@ -55,11 +55,16 @@ export default function page() {
           </div>
         </div>
         <div className="product__container__img">
-          <Image className="product__container__image" src={wp01} />
+          <Image
+            className="product__container__image"
+            src={wp01}
+            alt="product"
+          />
           <div className="product__container__img__multi__wraper">
             <div className="product__container__multi__img">
               <Image
                 className="product__container__multi__img__image"
+                alt="product"
                 src={wp01}
                 width={50}
                 height={50}

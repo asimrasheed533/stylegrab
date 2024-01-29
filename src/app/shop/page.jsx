@@ -9,45 +9,39 @@ export default function page() {
   const products = data.products.slice(0, 20);
   const [filteredItems, setFilteredItems] = useState(products);
   console.log(data.products);
-  const filterItems = (catItem) => {
-    const updateItems = products.filter((curItem) => {
-      return catItem === "accessories"
-        ? curItem.tags.includes(catItem)
-        : curItem.dressestags.includes(catItem);
+  const filterItem = (category) => {
+    const updatedItems = products.filter((curItem) => {
+      return curItem.category === category;
     });
-
-    console.log("updatedItems", updateItems);
-    // setItems(updateItems);
-    if (catItem === "all") {
-      setFilteredItems(products);
-      return;
-    }
-
-    setFilteredItems(updateItems);
+    // if (category === "all") {
+    //   setFilteredItems(products);
+    //   return;
+    // }
+    setFilteredItems(updatedItems);
   };
-
+  console.log("fliter", filteredItems);
   return (
     <>
       <div className="shop__main__header__line"></div>
       <div className="shop__main__header">
         <div className="shop__main__header__left">
-          <button
+          {/* <button
             className="shop__main__header__left__content__entry"
-            onClick={() => filterItems("all")}
+            onClick={() => filterItem("all")}
           >
             All
-          </button>
+          </button> */}
           <button
             className="shop__main__header__left__content__entry"
-            onClick={() => filterItems("accessories")}
-          >
-            Accessories
-          </button>
-          <button
-            className="shop__main__header__left__content__entry"
-            onClick={() => filterItems("accessories")}
+            onClick={() => filterItem("dress")}
           >
             Dresses
+          </button>
+          <button
+            className="shop__main__header__left__content__entry"
+            onClick={() => filterItem("accessories")}
+          >
+            Accessories
           </button>
         </div>
         <div className="shop__main__header__right">
