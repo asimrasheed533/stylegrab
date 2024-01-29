@@ -2,21 +2,52 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import data from "../../data/products.json";
 export default function page() {
-  const pathname = usePathname();
-  console.log(pathname);
+  const pathnameC = usePathname();
+  const products = data.products.slice(0, 20);
+  const [filteredItems, setFilteredItems] = useState(products);
   console.log(data.products);
+  const filterItems = (catItem) => {
+    const updateItems = products.filter((curItem) => {
+      return catItem === "accessories"
+        ? curItem.tags.includes(catItem)
+        : curItem.dressestags.includes(catItem);
+    });
+
+    console.log("updatedItems", updateItems);
+    // setItems(updateItems);
+    if (catItem === "all") {
+      setFilteredItems(products);
+      return;
+    }
+
+    setFilteredItems(updateItems);
+  };
+
   return (
     <>
       <div className="shop__main__header__line"></div>
       <div className="shop__main__header">
         <div className="shop__main__header__left">
-          <button className="shop__main__header__left__content__entry">
-            Men
+          <button
+            className="shop__main__header__left__content__entry"
+            onClick={() => filterItems("all")}
+          >
+            All
           </button>
-          <button className="shop__main__header__left__content__entry">
-            Women
+          <button
+            className="shop__main__header__left__content__entry"
+            onClick={() => filterItems("accessories")}
+          >
+            Accessories
+          </button>
+          <button
+            className="shop__main__header__left__content__entry"
+            onClick={() => filterItems("accessories")}
+          >
+            Dresses
           </button>
         </div>
         <div className="shop__main__header__right">
@@ -30,7 +61,7 @@ export default function page() {
         </div>
       </div>
       <div className="shop__products__container">
-        {data.products.slice(0, 20).map((product, index) => (
+        {filteredItems.map((product, index) => (
           <div key={product.id} className="shop__products__card__wraper">
             <div className="shop__products__fav__btn">
               <svg
@@ -49,12 +80,15 @@ export default function page() {
               </svg>
             </div>
             <Link
-              href={pathname + "/productdetail"}
+              href={{
+                pathname: `${pathnameC}/productdetail`,
+                query: product,
+              }}
               className="shop__products__card__img"
             >
               <Image
                 className="shop__products__card__base__img"
-                src={product.images[0].src}
+                src={product.images[1].src}
                 alt="product"
                 width={200}
                 height={300}
@@ -66,7 +100,7 @@ export default function page() {
                 {product.title}
               </div>
               <div className="shop__products__card__content__price">
-                Rs.{product.variants[0].price}
+                Rs.{product.price}
               </div>
             </div>
           </div>
