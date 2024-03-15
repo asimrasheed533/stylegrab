@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import headerimg from "../assets/headerimg.png";
 import eplur01 from "../assets/eplur01.png";
 import eplur02 from "../assets/eplur02.png";
@@ -22,9 +22,26 @@ import wcol01 from "../assets/wcol01.png";
 import wcol02 from "../assets/wcol02.png";
 import wcol03 from "../assets/wcol03.png";
 import Fade from "react-reveal/Fade";
-
+import BestSales from "@/components/BestSales";
+import gsap from "gsap";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 export default function page() {
+  const container = useRef();
+  useGSAP(
+    () => {
+      ScrollSmoother.create({
+        smooth: 1.15,
+        effects: true,
+        smoothTouch: 0,
+      });
+    },
+    { scope: container }
+  );
   const [slider, setIsSlider] = React.useState(6);
+
+  gsap.registerPlugin(ScrollSmoother);
 
   const checkWidth = () => {
     if (window.innerWidth > 1200) {
@@ -43,7 +60,7 @@ export default function page() {
     return () => window.removeEventListener("resize", checkWidth);
   }, [slider]);
   return (
-    <>
+    <Fragment ref={container}>
       <div className="main__header__container__bg">
         <div className="main__header__container">
           <div className="main__header__left">
@@ -195,6 +212,7 @@ export default function page() {
           </div>
         </div>
       </div>
+      <BestSales />
       {/* // brand slider section */}
       <div className="brand__logo__container">
         <Swiper
@@ -257,6 +275,6 @@ export default function page() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </Fragment>
   );
 }
