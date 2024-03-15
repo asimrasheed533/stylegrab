@@ -23,25 +23,8 @@ import wcol02 from "../assets/wcol02.png";
 import wcol03 from "../assets/wcol03.png";
 import Fade from "react-reveal/Fade";
 import BestSales from "@/components/BestSales";
-import gsap from "gsap";
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
 export default function page() {
-  const container = useRef();
-  useGSAP(
-    () => {
-      ScrollSmoother.create({
-        smooth: 1.15,
-        effects: true,
-        smoothTouch: 0,
-      });
-    },
-    { scope: container }
-  );
   const [slider, setIsSlider] = React.useState(6);
-
-  gsap.registerPlugin(ScrollSmoother);
 
   const checkWidth = () => {
     if (window.innerWidth > 1200) {
@@ -60,7 +43,7 @@ export default function page() {
     return () => window.removeEventListener("resize", checkWidth);
   }, [slider]);
   return (
-    <Fragment ref={container}>
+    <>
       <div className="main__header__container__bg">
         <div className="main__header__container">
           <div className="main__header__left">
@@ -275,6 +258,6 @@ export default function page() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </Fragment>
+    </>
   );
 }
