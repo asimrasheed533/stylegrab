@@ -1,9 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "react-feather";
-import logomobile from "../assets/mobiles/logomobile.png";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,12 +36,7 @@ export default function Header() {
             : "header__nav__container"
         }
       >
-        {/* <Link href="/" className="header__nav__container__logo">
-         
-          logo
-        </Link> */}
-        <div>logo</div>
-        {/* <Link href="/" className="header__nav__container__logo">
+        <Link href="/" className="header__nav__container__logo">
           {isScrolled === true ? (
             <svg
               width="60"
@@ -600,7 +593,7 @@ export default function Header() {
               </defs>
             </svg>
           )}
-        </Link> */}
+        </Link>
         {isOpen ? (
           <div className="header__nav__link__wraper">
             <Link

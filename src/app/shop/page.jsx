@@ -4,10 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import data from "../../data/products.json";
-import m08 from "../../assets/mobiles/m08.jpg";
-import m09 from "../../assets/mobiles/m09.jpg";
-import m12 from "../../assets/mobiles/m12.jpg";
-import m13 from "../../assets/mobiles/m13.png";
 export default function page() {
   const pathnameC = usePathname();
   const products = data.products.slice(0, 20);
@@ -39,13 +35,13 @@ export default function page() {
             className="shop__main__header__left__content__entry"
             onClick={() => filterItem("dress")}
           >
-            Apple
+            Dresses
           </button>
           <button
             className="shop__main__header__left__content__entry"
             onClick={() => filterItem("accessories")}
           >
-            Android
+            Accessories
           </button>
         </div>
         <div className="shop__main__header__right">
@@ -79,15 +75,14 @@ export default function page() {
             </div>
             <Link
               href={{
-                // pathname: `${pathnameC}/productdetail`,
-                pathname: "/",
+                pathname: `${pathnameC}/productdetail`,
                 query: product,
               }}
               className="shop__products__card__img"
             >
               <Image
                 className="shop__products__card__base__img"
-                src={m12}
+                src={product.images[1].src}
                 alt="product"
                 width={200}
                 height={300}
@@ -96,7 +91,7 @@ export default function page() {
 
             <div className="shop__products__card__content">
               <div className="shop__products__card__content__title">
-                oppo 17
+                {product.title}
               </div>
               <div className="shop__products__card__content__price">
                 Rs.{product.price}
