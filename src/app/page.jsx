@@ -21,6 +21,17 @@ import log07 from "../assets/log07.png";
 import wcol01 from "../assets/wcol01.png";
 import wcol02 from "../assets/wcol02.png";
 import wcol03 from "../assets/wcol03.png";
+import m02 from "../assets/mobiles/m02.jpg";
+import m03 from "../assets/mobiles/m03.jpg";
+import m05 from "../assets/mobiles/m05.jpg";
+import m06 from "../assets/mobiles/m06.jpg";
+import m07 from "../assets/mobiles/m07.jpg";
+import m08 from "../assets/mobiles/m08.jpg";
+import m09 from "../assets/mobiles/m09.jpg";
+import m11 from "../assets/mobiles/m11.jpeg";
+import m12 from "../assets/mobiles/m12.jpg";
+import m13 from "../assets/mobiles/m13.png";
+import m14 from "../assets/mobiles/m14.webp";
 import Fade from "react-reveal/Fade";
 import BestSales from "@/components/BestSales";
 export default function page() {
@@ -62,7 +73,7 @@ export default function page() {
           </div>
           <Fade duration={2500}>
             <div className="main__header__right">
-              <Image className="main__header__right__img" src={headerimg} />
+              <Image className="main__header__right__img" src={m13} />
             </div>
           </Fade>
         </div>
@@ -74,7 +85,7 @@ export default function page() {
           <div className="collection__main__container__left">
             <Image
               className="collection__main__container__left__image"
-              src={eplur01}
+              src={m03}
             />
           </div>
         </Fade>
@@ -93,15 +104,17 @@ export default function page() {
           </div>
           <div className="collection__main__container__right__imgs__wraper">
             <div className="collection__main__container__right__imgs__card">
-              <Image className="collection__main__card__image" src={eplur02} />
+              <Image className="collection__main__card__image" src={m11} />
               <div className="collection__main__card__img__title__bg">
-                <div className="collection__main__card__img__title">Man</div>
+                <div className="collection__main__card__img__title">Apple</div>
               </div>
             </div>
             <div className="collection__main__container__right__imgs__card">
-              <Image className="collection__main__card__image" src={eplur03} />
+              <Image className="collection__main__card__image" src={m14} />
               <div className="collection__main__card__img__title__bg">
-                <div className="collection__main__card__img__title">Women</div>
+                <div className="collection__main__card__img__title">
+                  Android
+                </div>
               </div>
             </div>
           </div>
@@ -111,10 +124,7 @@ export default function page() {
       <div className="discount__section">
         <Fade up duration={1000} dely={300}>
           <div className="discount__section__left">
-            <Image
-              className="discount__section__left__image"
-              src={discountimg}
-            />
+            <Image className="discount__section__left__image" src={m06} />
           </div>
         </Fade>
         <div className="discount__section__right">
