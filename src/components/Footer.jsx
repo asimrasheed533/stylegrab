@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="footer__explore__container__row__bottom">
           <div className="footer__explore__container__col__first">
             <div className="footer__explore__container__col__logo">
-              <svg
+              {/* <svg
                 width="80"
                 height="80"
                 viewBox="0 0 35 35"
@@ -330,7 +330,7 @@ export default function Footer() {
                     <stop offset="0.9911" stop-color="#00362D" />
                   </linearGradient>
                 </defs>
-              </svg>
+              </svg> */}
             </div>
             <div className="footer__explore__container__col__text">
               We're a trusted web and mobile app development agency with

@@ -60,7 +60,7 @@ export default function page() {
           <div className="main__header__left">
             <Fade up duration={1000} dely={300}>
               <div className="main__header__left__contant__heading">
-                Discover and Find Your Own Fashion!
+                Discover and Find Your Own Mobile!
               </div>
             </Fade>
             <div className="main__header__left__contant__sub__heading">
@@ -155,7 +155,7 @@ export default function page() {
               <div className="explur__main__wraper__img__card__img">
                 <Image
                   className="explur__main__wraper__img__card__image"
-                  src={wcol02}
+                  src={m03}
                   alt="store"
                 />
               </div>
@@ -173,7 +173,7 @@ export default function page() {
               <div className="explur__main__wraper__img__card__img">
                 <Image
                   className="explur__main__wraper__img__card__img2"
-                  src={wcol01}
+                  src={m05}
                   alt="store"
                 />
               </div>
@@ -191,7 +191,7 @@ export default function page() {
               <div className="explur__main__wraper__img__card__img">
                 <Image
                   className="explur__main__wraper__img__card__image"
-                  src={wcol03}
+                  src={m07}
                   alt="store"
                 />
               </div>
@@ -205,7 +205,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <BestSales />
+      {/* <BestSales /> */}
       {/* // brand slider section */}
       <div className="brand__logo__container">
         <Swiper
